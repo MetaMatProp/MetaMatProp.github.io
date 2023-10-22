@@ -192,7 +192,7 @@ const Product = () => {
                             </P>
                         </Div>
                         <Div width="100%" $backgroundColor="lightBlue" $padding="30px 0">
-                            <P fontSize="xs" $center $lineHeight="1.6">
+                            <P fontSize="xs" $lineHeight="1.6">
                                 DesignedAI helps to save your valuable time and money for your AI products & services,
                                 and scientific computation problems.
                             </P>
