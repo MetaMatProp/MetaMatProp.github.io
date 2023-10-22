@@ -191,7 +191,7 @@ const Product = () => {
                                 Faster, Less Memory, Less Energy, and Easy Deployment
                             </P>
                         </Div>
-                        <Div width="100%" $backgroundColor="lightBlue" $padding="30px 0">
+                        <Div width="100%" $backgroundColor="lightBlue" $padding="30px 10px">
                             <P fontSize="xs" $lineHeight="1.6">
                                 DesignedAI helps to save your valuable time and money for your AI products & services,
                                 and scientific computation problems.
@@ -208,8 +208,8 @@ const Product = () => {
                                     </H2>
                                 </Div>
                             </Div>
-                            <Div width="100%" $padding="20px 0 0 0">
-                                <P color="red1" fontSize="xxs" $center $lineHeight="1.6">
+                            <Div width="100%" $padding="20px ">
+                                <P color="red1" fontSize="xxs" $lineHeight="1.6">
                                     DesignedAI is creating the next-generation AI software
                                     <br />
                                     framework technology that helps your AI products or services

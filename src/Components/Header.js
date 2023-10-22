@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { useNavigate } from "react-router-dom"
-import { PC } from "../MediaQuery"
+import { Mobile, PC } from "../MediaQuery"
 import { Div } from "../styles/Div"
 import Img from "../styles/Img"
 import { P } from "../styles/P"
@@ -20,6 +20,19 @@ const StyledHeader = styled(Div)`
     padding: 0 0 0 30px;
 `
 
+const StyledHeaderMobile = styled(Div)`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+`
+
 const ContactHeader = () => {
     const navigate = useNavigate()
     const movePage = () => {
@@ -30,34 +43,57 @@ const ContactHeader = () => {
     }
 
     return (
-        <PC>
-            <StyledHeader $backgroundColor="bk">
-                <Div display="flex" $pointer onClick={movePage}>
-                    <Div width="40px" height="40px">
-                        <Img src="/images/logo.jpg" $objectFit="fill" />
+        <>
+            <PC>
+                <StyledHeader $backgroundColor="bk">
+                    <Div display="flex" $pointer onClick={movePage}>
+                        <Div width="40px" height="40px">
+                            <Img src="/images/logo.jpg" $objectFit="fill" />
+                        </Div>
+                        <Div $padding="0 0 0 30px ">
+                            <P color="wh" fontSize="lg" fontWeight="800">
+                                DesignedAI
+                            </P>
+                        </Div>
                     </Div>
-                    <Div $padding="0 0 0 30px ">
-                        <P color="wh" fontSize="lg" fontWeight="800">
-                            DesignedAI
-                        </P>
+                    <Div
+                        display="flex"
+                        $pointer
+                        $justifyContent="end"
+                        width="700px"
+                        $padding="0 30px 0 0"
+                        onClick={moveContact}
+                    >
+                        <Div>
+                            <P color="wh" fontSize="lg">
+                                Contact
+                            </P>
+                        </Div>
                     </Div>
-                </Div>
-                <Div
-                    display="flex"
-                    $pointer
-                    $justifyContent="end"
-                    width="700px"
-                    $padding="0 30px 0 0"
-                    onClick={moveContact}
-                >
-                    <Div>
-                        <P color="wh" fontSize="lg">
-                            Contact
-                        </P>
+                </StyledHeader>
+            </PC>
+            <Mobile>
+                <StyledHeaderMobile $backgroundColor="bk">
+                    <Div display="flex" $pointer onClick={movePage}>
+                        <Div width="20px" height="20px">
+                            <Img src="/images/logo.jpg" $objectFit="fill" />
+                        </Div>
+                        <Div $padding="0 0 0 30px ">
+                            <P color="wh" fontSize="xs" fontWeight="800">
+                                DesignedAI
+                            </P>
+                        </Div>
                     </Div>
-                </Div>
-            </StyledHeader>
-        </PC>
+                    <Div display="flex" $pointer $justifyContent="end" $padding="0 30px 0 0" onClick={moveContact}>
+                        <Div>
+                            <P color="wh" fontSize="xs">
+                                Contact
+                            </P>
+                        </Div>
+                    </Div>
+                </StyledHeaderMobile>
+            </Mobile>
+        </>
     )
 }
 
