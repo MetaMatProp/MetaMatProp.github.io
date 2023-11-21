@@ -1,36 +1,36 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import { Mobile, PC } from "../../MediaQuery"
+import { Mobile, PC } from "../../MediaQuery";
 
-import { Div } from "../../styles/Div"
-import Img from "../../styles/Img"
-import { P } from "../../styles/P"
+import { Div } from "../../styles/Div";
+import Img from "../../styles/Img";
+import { P } from "../../styles/P";
 
 const HR = styled.hr`
     width: 15%;
     margin: 0;
-`
+`;
 const MobileHR = styled.hr`
     width: 3%;
     margin: 0;
-`
+`;
 const AbDiv = styled(Div)`
     position: absolute;
 
     bottom: 0px;
     right: 10px;
-`
+`;
 
 const ReDiv = styled(Div)`
     position: relative;
-`
+`;
 
 const BLAS = () => {
     return (
         <>
             <PC>
-                <Div width="100%" display="flex" $padding="30px" $margin=" 0 0 100px 0" $backgroundColor="grey1">
+                <Div width="100%" display="flex" $padding="30px" $margin=" 0 0 50px 0" $backgroundColor="grey1">
                     <Div>
                         <P fontSize="xl">
                             Our innovative BLAS-GEMM compute-kernel technology delivers the state-of-the-art performance
@@ -152,7 +152,7 @@ const BLAS = () => {
                             <Img src="/images/BLAS-memory.png" />
                         </Div>
                     </Div>
-                    <ReDiv width="100%" $margin="20px 0">
+                    <ReDiv width="100%" $margin="20px 0 0 40px">
                         <Div>
                             <P $lineHeight="1.6" fontSize="sm">
                                 <i>
@@ -176,7 +176,7 @@ const BLAS = () => {
                 </Div>
             </PC>
             <Mobile>
-                <Div width="100%" display="flex" $padding="10px" $margin=" 0 0 30px 0" $backgroundColor="grey1">
+                <Div width="100%" display="flex" $padding="10px" $margin=" 0 0 15px 0" $backgroundColor="grey1">
                     <Div>
                         <P fontSize="xxs" $lineHeight="1.6">
                             Our innovative BLAS-GEMM compute-kernel technology delivers the state-of-the-art performance
@@ -301,7 +301,7 @@ const BLAS = () => {
                             <Img src="/images/BLAS-memory.png" />
                         </Div>
                     </Div>
-                    <Div width="100%" $margin="20px 0">
+                    <Div width="100%" $margin="20px 0 0 20px ">
                         <Div>
                             <P $lineHeight="1.6" fontSize="xxxs">
                                 <i>
@@ -325,7 +325,7 @@ const BLAS = () => {
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default BLAS
+export default BLAS;

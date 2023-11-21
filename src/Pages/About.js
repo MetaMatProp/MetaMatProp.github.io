@@ -1,24 +1,24 @@
-import React from "react"
-import { useNavigate } from "react-router-dom"
-import { styled } from "styled-components"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { styled } from "styled-components";
 
-import theme from "../theme"
+import theme from "../theme";
 
-import { Mobile, PC } from "../MediaQuery"
+import { Mobile, PC } from "../MediaQuery";
 
-import { Div, Section } from "../styles/Div"
-import { H2 } from "../styles/H"
-import { P } from "../styles/P"
+import { Div, Section } from "../styles/Div";
+import { H2 } from "../styles/H";
+import { P } from "../styles/P";
 
 const MoveDiv = styled(Div)`
     cursor: pointer;
-`
+`;
 
 const About = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const moveEvent = () => {
-        navigate("/contact")
-    }
+        navigate("/contact");
+    };
     return (
         <>
             <PC>
@@ -135,7 +135,7 @@ const About = () => {
                         >
                             <Div $margin="0 0 50px 0">
                                 <H2 fontSize="xxxl" fontWeight="800" $center>
-                                    We are exciting to cooperate with you!
+                                    We are excited to help your AI business and become a partner with you!
                                 </H2>
                             </Div>
                             <MoveDiv
@@ -148,7 +148,7 @@ const About = () => {
                                 onClick={moveEvent}
                             >
                                 <H2 fontSize="xxxl" fontWeight="800" $center>
-                                    Join DesignedAI partnership
+                                    Contact us for all your questions
                                 </H2>
                             </MoveDiv>
                         </Div>
@@ -298,7 +298,7 @@ const About = () => {
                     >
                         <Div $margin="0 0 30px 0">
                             <H2 fontSize="sm" fontWeight="800" $center>
-                                We are exciting to cooperate with you!
+                                We are excited to help your AI business and become a partner with you!
                             </H2>
                         </Div>
                         <Div
@@ -311,14 +311,14 @@ const About = () => {
                             onClick={moveEvent}
                         >
                             <H2 fontSize="sm" fontWeight="800" $center>
-                                Join DesignedAI partnership
+                                Contact us for all your questions
                             </H2>
                         </Div>
                     </Div>
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

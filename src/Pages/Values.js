@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import theme from "../theme"
+import theme from "../theme";
 
-import { Mobile, PC } from "../MediaQuery"
-import { Div, Section } from "../styles/Div"
-import { H2 } from "../styles/H"
-import { P } from "../styles/P"
+import { Mobile, PC } from "../MediaQuery";
+import { Div, Section } from "../styles/Div";
+import { H2 } from "../styles/H";
+import { P } from "../styles/P";
 
 const Values = () => {
     return (
@@ -144,7 +144,8 @@ const Values = () => {
                             <P fontSize="xl" $center fontWeight="800" $lineHeight="2">
                                 Optimizing performance, computing resources, and energy consumption through software
                                 <br />
-                                technologies has been one of the great challenging problems in AI util DesignedAI Metep.
+                                technologies has been one of the great challenging problems in AI until DesignedAI
+                                Metep.
                             </P>
                         </Div>
                     </Div>
@@ -294,13 +295,13 @@ const Values = () => {
                         <P fontSize="xxs" fontWeight="800" $lineHeight="2">
                             Optimizing performance, computing resources, and energy consumption through software
                             <br />
-                            technologies has been one of the great challenging problems in AI util DesignedAI Metep.
+                            technologies has been one of the great challenging problems in AI until DesignedAI Metep.
                         </P>
                     </Div>
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default Values
+export default Values;

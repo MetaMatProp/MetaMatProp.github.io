@@ -1,33 +1,33 @@
-import React from "react"
-import { styled } from "styled-components"
+import React from "react";
+import { styled } from "styled-components";
 
-import theme from "../../theme"
+import theme from "../../theme";
 
-import { Mobile, PC } from "../../MediaQuery"
-import { Div } from "../../styles/Div"
-import Img from "../../styles/Img"
-import { P } from "../../styles/P"
+import { Mobile, PC } from "../../MediaQuery";
+import { Div } from "../../styles/Div";
+import Img from "../../styles/Img";
+import { P } from "../../styles/P";
 
 const HR = styled.hr`
     width: 15%;
     margin: 0;
-`
+`;
 
 const MobileHR = styled.hr`
     width: 3%;
     margin: 0;
-`
+`;
 
 const AbDiv = styled(Div)`
     position: absolute;
 
     bottom: 0px;
     right: 10px;
-`
+`;
 
 const ReDiv = styled(Div)`
     position: relative;
-`
+`;
 
 const contentList = [
     ["conv_0", "conv_4", "batch size"],
@@ -38,7 +38,7 @@ const contentList = [
     ["32x32x256", "512x512x32", "1"],
     ["conv_3", "conv_7", "dilation"],
     ["64x64x256", "1024x1024x16", "1"],
-]
+];
 const DLP = () => {
     return (
         <>
@@ -46,7 +46,7 @@ const DLP = () => {
                 <Div width="100%" display="flex">
                     <Div width="100%" display="flex">
                         <Div width="100%" $padding="30px" $margin=" 0 0 50px 0" $backgroundColor="grey1">
-                            <P fontSize="lg" $center>
+                            <P fontSize="lg">
                                 Convolution is one of the most compute-intensive deep learning primitive operations,
                                 which takes 80% computation of most of convolutional neural networks. See our
                                 resource-efficient the state-of-the-art performance over a variety of convolution
@@ -389,7 +389,7 @@ const DLP = () => {
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default DLP
+export default DLP;

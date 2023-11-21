@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import { Mobile, PC } from "../MediaQuery"
+import { Mobile, PC } from "../MediaQuery";
 
-import { Div, Section } from "../styles/Div"
-import { H2 } from "../styles/H"
-import { P } from "../styles/P"
+import { Div, Section } from "../styles/Div";
+import { H2 } from "../styles/H";
+import { P } from "../styles/P";
 
 const Product = () => {
     return (
@@ -80,7 +80,7 @@ const Product = () => {
                                             <Div display="flex" width="100%" height="115px" $backgroundColor="wh">
                                                 <Div $padding="10px">
                                                     <P $whitespace="normal" $lineHeight="1.6" $center>
-                                                        Truly end-to-end & whole-stack code optimization
+                                                        Truly end-to-end & full-stack code optimization
                                                     </P>
                                                 </Div>
                                             </Div>
@@ -248,7 +248,7 @@ const Product = () => {
                                         $padding="10px 30px"
                                     >
                                         <P fontSize="xxs" $whitespace="normal" $lineHeight="1.6" $center>
-                                            Truly end-to-end & whole-stack code optimization
+                                            Truly end-to-end & full-stack code optimization
                                         </P>
                                     </Div>
                                     <Div display="flex" width="80%" height="60px" $backgroundColor="wh" $padding="10px">
@@ -272,21 +272,14 @@ const Product = () => {
                                         </P>
                                     </Div>
                                 </Div>
-                                <Div width="100%" display="flex" $margin="50px 0 ">
-                                    <Div display="flex" $backgroundColor="wh" $padding="20px" $borderRadius="100px">
-                                        <P $center fontWeight="800" color="red" fontSize="xs">
-                                            Metep
-                                            <br />
-                                            AI Framework
-                                        </P>
-                                    </Div>
-                                </Div>
+
                                 <Div
                                     width="100%"
                                     height="350px"
                                     display="flex"
                                     direction="column"
                                     $justifyContent="space-between"
+                                    $margin="50px 0 0 0"
                                 >
                                     <Div>
                                         <H2 fontSize="xs" fontWeight="800" color="red">
@@ -322,7 +315,7 @@ const Product = () => {
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default Product
+export default Product;
