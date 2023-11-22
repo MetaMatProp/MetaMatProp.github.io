@@ -37,7 +37,7 @@ const UseCase = () => {
                                     </P>
                                 </Div>
                             </Div>
-                            <Div display="flex">
+                            <Div display="flex" width="100%">
                                 <VideoDiv>
                                     <Video muted controls>
                                         <source src="/images/useCase.mp4"></source>

@@ -1,17 +1,17 @@
-import { useState } from "react"
-import { styled } from "styled-components"
+import { useState } from "react";
+import { styled } from "styled-components";
 
-import theme from "../../theme"
+import theme from "../../theme";
 
-import { Mobile, PC } from "../../MediaQuery"
-import { Div, Section } from "../../styles/Div"
-import { P } from "../../styles/P"
+import { Mobile, PC } from "../../MediaQuery";
+import { Div, Section } from "../../styles/Div";
+import { P } from "../../styles/P";
 
-import { useNavigate } from "react-router-dom"
-import BLAS from "./BLAS"
-import DLP from "./DLP"
-import EndToEnd from "./EndToEnd"
-import Tensor from "./Tensor"
+import { useNavigate } from "react-router-dom";
+import BLAS from "./BLAS";
+import DLP from "./DLP";
+import EndToEnd from "./EndToEnd";
+import Tensor from "./Tensor";
 
 const TabDiv = styled.div`
     width: 200px;
@@ -24,11 +24,11 @@ const TabDiv = styled.div`
     align-items: center;
     background-color: ${({ $clicked }) => {
         if ($clicked) {
-            return `${theme.color.redlayer1};`
+            return `${theme.color.redlayer1};`;
         }
-        return `${theme.color.grey1};`
+        return `${theme.color.grey1};`;
     }};
-`
+`;
 
 const TabMobileDiv = styled.div`
     width: 85px;
@@ -40,11 +40,11 @@ const TabMobileDiv = styled.div`
     align-items: center;
     background-color: ${({ $clicked }) => {
         if ($clicked) {
-            return `${theme.color.redlayer1};`
+            return `${theme.color.redlayer1};`;
         }
-        return `${theme.color.grey1};`
+        return `${theme.color.grey1};`;
     }};
-`
+`;
 
 const TabP = styled.p`
     margin: 0;
@@ -52,11 +52,11 @@ const TabP = styled.p`
     text-align: center;
     color: ${({ $clicked }) => {
         if ($clicked) {
-            return `${theme.color.red};`
+            return `${theme.color.red};`;
         }
-        return `${theme.color.bk};`
+        return `${theme.color.bk};`;
     }};
-`
+`;
 
 const TabMobileP = styled.p`
     margin: 0;
@@ -64,31 +64,31 @@ const TabMobileP = styled.p`
     text-align: center;
     color: ${({ $clicked }) => {
         if ($clicked) {
-            return `${theme.color.red};`
+            return `${theme.color.red};`;
         }
-        return `${theme.color.bk};`
+        return `${theme.color.bk};`;
     }};
-`
+`;
 
 const Tab = () => {
-    const [currentTab, setTab] = useState(0)
+    const [currentTab, setTab] = useState(0);
 
     const menuArr = [
         { name: "End-to-end", content: <EndToEnd /> },
         { name: `Tensor Operations`, content: <Tensor /> },
         { name: "DL Primitives", content: <DLP /> },
         { name: "BLAS Kernels", content: <BLAS /> },
-    ]
+    ];
 
     const selectMenuHandler = (index) => {
-        setTab(index)
-    }
+        setTab(index);
+    };
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const moveContact = () => {
-        navigate("/contact")
-    }
+        navigate("/contact");
+    };
 
     return (
         <>
@@ -113,7 +113,7 @@ const Tab = () => {
                                         <TabP $clicked={currentTab === index}>{tab.name}</TabP>
                                     </Div>
                                 </TabDiv>
-                            )
+                            );
                         })}
                     </Div>
                     <Div width="100%" $padding="20px" $backgroundColor="grey1">
@@ -129,7 +129,7 @@ const Tab = () => {
                             $pointer
                         >
                             <P fontSize="lg" fontWeight={700}>
-                                Contact us for all your question
+                                Contact us for all your questions
                             </P>
                         </Div>
                     </Div>
@@ -158,7 +158,7 @@ const Tab = () => {
                                     </TabMobileP>
                                 </Div>
                             </TabMobileDiv>
-                        )
+                        );
                     })}
                     <Div width="100%" $padding="20px" $backgroundColor="grey1">
                         {menuArr[currentTab].content}
@@ -172,14 +172,14 @@ const Tab = () => {
                             onClick={moveContact}
                         >
                             <P fontSize="xxs" fontWeight={700}>
-                                Contact us for all your question
+                                Contact us for all your questions
                             </P>
                         </Div>
                     </Div>
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default Tab
+export default Tab;

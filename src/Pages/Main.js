@@ -70,7 +70,7 @@ const Main = () => {
                                         Te
                                     </P>
                                 </Div>
-                                <Div>
+                                <Div $margin="0 10px 0 0">
                                     <P color="wh" fontSize="xxxl" $center>
                                         nsor
                                     </P>
@@ -138,7 +138,7 @@ const Main = () => {
                                         Te
                                     </P>
                                 </Div>
-                                <Div>
+                                <Div $margin="0 5px 0 0 ">
                                     <P color="wh" fontSize="xs" $center>
                                         nsor
                                     </P>
