@@ -423,7 +423,7 @@ const Tensor = () => {
                                 </P>
                             </Div>
                             <Div>
-                                <Div width="100%" height="250px" display="flex">
+                                <Div width="100%" height="250px" display="flex" $padding="0 10px">
                                     <Img src="/images/tensor.png" />
                                 </Div>
                                 <Div>
