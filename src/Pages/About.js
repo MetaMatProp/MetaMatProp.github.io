@@ -148,7 +148,7 @@ const About = () => {
                                 onClick={moveEvent}
                             >
                                 <H2 fontSize="xxxl" fontWeight="800" $center>
-                                    Contact us for all your questions
+                                    Contact us
                                 </H2>
                             </MoveDiv>
                         </Div>
@@ -311,7 +311,7 @@ const About = () => {
                             onClick={moveEvent}
                         >
                             <H2 fontSize="sm" fontWeight="800" $center>
-                                Contact us for all your questions
+                                Contact us
                             </H2>
                         </Div>
                     </Div>

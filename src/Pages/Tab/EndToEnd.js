@@ -1,21 +1,21 @@
-import React from "react"
-import { styled } from "styled-components"
+import React from "react";
+import { styled } from "styled-components";
 
-import { Mobile, PC } from "../../MediaQuery"
-import { Div } from "../../styles/Div"
-import Img from "../../styles/Img"
-import { P } from "../../styles/P"
+import { Mobile, PC } from "../../MediaQuery";
+import { Div } from "../../styles/Div";
+import Img from "../../styles/Img";
+import { P } from "../../styles/P";
 
 const AbDiv = styled(Div)`
     position: absolute;
 
     bottom: 0px;
     right: 10px;
-`
+`;
 
 const ReDiv = styled(Div)`
     position: relative;
-`
+`;
 
 const EndToEnd = () => {
     return (
@@ -30,14 +30,20 @@ const EndToEnd = () => {
                             platform.
                         </P>
                     </Div>
-                    <Div width="100%">
+                    <Div width="100%" display="flex">
                         <Div width="100%">
                             <P color="bk" fontSize="sm" fontWeight="800">
                                 * Less is better.
                             </P>
                         </Div>
-                        <Div display="flex" width="100%" $margin="30px 0 0 0" $justifyContent="space-evenly">
-                            <Div $minWidth="550px">
+                        <Div
+                            display="flex"
+                            direction="column"
+                            width="100%"
+                            $margin="30px 0 0 0"
+                            $justifyContent="space-evenly"
+                        >
+                            <Div width="100%" display="flex">
                                 <Div
                                     width="100%"
                                     $padding="8px"
@@ -50,11 +56,11 @@ const EndToEnd = () => {
                                         <P fontSize="lg">Latency per image</P>
                                     </Div>
                                 </Div>
-                                <Div height="250px">
-                                    <Img src="/images/latency.png" />
+                                <Div height="200px">
+                                    <Img src="/images/pc_latency.png" />
                                 </Div>
                             </Div>
-                            <Div $minWidth="550px">
+                            <Div width="100%" display="flex">
                                 <Div
                                     width="100%"
                                     $padding="8px"
@@ -67,13 +73,11 @@ const EndToEnd = () => {
                                         <P fontSize="lg">Memory Usage</P>
                                     </Div>
                                 </Div>
-                                <Div height="250px">
-                                    <Img src="/images/memory.png" />
+                                <Div height="200px">
+                                    <Img src="/images/pc_memory.png" />
                                 </Div>
                             </Div>
-                        </Div>
-                        <Div display="flex" width="100%" $margin="30px 0 0 0" $justifyContent="space-evenly">
-                            <Div $minWidth="550px">
+                            <Div width="100%" display="flex">
                                 <Div
                                     width="100%"
                                     $padding="8px"
@@ -86,25 +90,8 @@ const EndToEnd = () => {
                                         <P fontSize="lg">Energy Consumption</P>
                                     </Div>
                                 </Div>
-                                <Div height="250px">
-                                    <Img src="/images/energy.png" />
-                                </Div>
-                            </Div>
-                            <Div $minWidth="550px" $margin="30px 0">
-                                <Div
-                                    width="100%"
-                                    $padding="8px"
-                                    $backgroundColor="blue"
-                                    $borderRadius="50px"
-                                    display="flex"
-                                    $margin="0 0 30px 0"
-                                >
-                                    <Div>
-                                        <P fontSize="lg">Post-processing (NMS) time per image</P>
-                                    </Div>
-                                </Div>
-                                <Div height="250px">
-                                    <Img src="/images/postproc.png" />
+                                <Div height="200px">
+                                    <Img src="/images/pc_energy.png" />
                                 </Div>
                             </Div>
                         </Div>
@@ -166,7 +153,7 @@ const EndToEnd = () => {
                                 </Div>
                             </Div>
                             <Div height="120px">
-                                <Img src="/images/latency.png" />
+                                <Img src="/images/mobile_latency.png" />
                             </Div>
                         </Div>
                         <Div>
@@ -185,12 +172,9 @@ const EndToEnd = () => {
                                 </Div>
                             </Div>
                             <Div height="120px">
-                                <Img src="/images/memory.png" />
+                                <Img src="/images/mobile_memory.png" />
                             </Div>
                         </Div>
-                    </Div>
-
-                    <Div display="flex" width="100%" $justifyContent="space-evenly">
                         <Div>
                             <Div
                                 width="100%"
@@ -198,7 +182,6 @@ const EndToEnd = () => {
                                 $backgroundColor="blue"
                                 $borderRadius="50px"
                                 display="flex"
-                                $margin="0 0 30px 0"
                             >
                                 <Div>
                                     <P fontSize="xxs" fontWeight="800">
@@ -207,26 +190,7 @@ const EndToEnd = () => {
                                 </Div>
                             </Div>
                             <Div height="120px">
-                                <Img src="/images/energy.png" />
-                            </Div>
-                        </Div>
-                        <Div $margin="30px 0">
-                            <Div
-                                width="100%"
-                                $padding="8px"
-                                $backgroundColor="blue"
-                                $borderRadius="50px"
-                                display="flex"
-                                $margin="0 0 30px 0"
-                            >
-                                <Div>
-                                    <P fontSize="xxs" fontWeight="800">
-                                        Post-processing (NMS) time per image
-                                    </P>
-                                </Div>
-                            </Div>
-                            <Div height="120px">
-                                <Img src="/images/postproc.png" />
+                                <Img src="/images/mobile_energy.png" />
                             </Div>
                         </Div>
                     </Div>
@@ -254,7 +218,7 @@ const EndToEnd = () => {
                 </Div>
             </Mobile>
         </>
-    )
-}
+    );
+};
 
-export default EndToEnd
+export default EndToEnd;

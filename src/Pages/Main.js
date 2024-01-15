@@ -46,7 +46,7 @@ const Main = () => {
                         <Div width="100%">
                             <Div display="flex" width="100%" $margin="0 0 50px 0 ">
                                 <P color="wh" fontSize="xxxl" $center fontWeight="400">
-                                    We created the fastest and the most cost-efficient general AI software framework
+                                    Fast and cost-efficient general AI framework
                                 </P>
                             </Div>
                             <Div display="flex" width="100%" $margin="0 0 20px 0">
@@ -111,10 +111,7 @@ const Main = () => {
                         <Div width="100%">
                             <Div display="flex" width="100%">
                                 <P color="wh" fontSize="xs" $center fontWeight="400" $whitespace="normal">
-                                    We created <br />
-                                    the fastest and the most cost-efficient
-                                    <br />
-                                    general AI software framework
+                                    Fast and cost-efficient general AI framework
                                 </P>
                             </Div>
                             <Div display="flex" width="100%" $margin="20px 0">
